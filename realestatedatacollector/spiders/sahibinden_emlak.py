@@ -12,7 +12,7 @@ class SahibindenEmlakSpider(scrapy.Spider):
 
     def start_requests(self):
         start = 0
-        for i in range(0, 20):
+        for i in range(0, 1):
             yield scrapy.Request(
                 'http://sahibinden.com/satilik?pagingSize=50&pagingOffset=' + str(
                     i * 50) + '&address_town=660&address_town=661&address_town=653'
@@ -22,5 +22,5 @@ class SahibindenEmlakSpider(scrapy.Spider):
         table = response.css('#searchResultsTable')
         tr = table.xpath('//tr[@data-id]')
         for i in tr:
-            print(i)
+            print(i.attrib['data-id'])
         pass
