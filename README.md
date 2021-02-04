@@ -1,7 +1,7 @@
-$ cd ilgili_proje_dizini
-$ scrapy crawl ilgili_spider_adi
+- $ cd ilgili_proje_dizini
+- $ scrapy crawl ilgili_spider_adi
 
-Gibi spider içindeki name alanına göre çağrılır...
+- Gibi spider içindeki name alanına göre çağrılır...
 
 ![scrapy pycharm config for debug](./pycharm_config.png)
 
